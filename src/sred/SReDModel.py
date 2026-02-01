@@ -213,10 +213,10 @@ class SReDModel(tf.keras.Model):
 
             os.makedirs(checkpoint_dir, exist_ok=True)
             #checkpoint_path = os.path.join(model_dir, "checkpoints", "cp-{epoch:04d}.h5")
-            initial_weights_path = checkpoint_dir / "initial-weights.h5"
+            initial_weights_path = checkpoint_dir / "initial.weights.h5"
             self.save_weights(initial_weights_path)
-            best_checkpoint_path = checkpoint_dir / "cp-weights-best.h5"
-            last_checkpoint_path = checkpoint_dir / "cp-weights-last.h5"
+            best_checkpoint_path = checkpoint_dir / "cp-weights-best.weights.h5"
+            last_checkpoint_path = checkpoint_dir / "cp-weights-last.weights.h5"
             history_path = checkpoint_dir / "history.json"
         else:
             initial_weights_path = None

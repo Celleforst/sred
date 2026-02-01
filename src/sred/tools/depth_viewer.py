@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import pathlib
-import PySimpleGUI as sg
+# import PySimpleGUI as sg  # Disabled to prevent GUI issues
 import argparse
 import sys
 

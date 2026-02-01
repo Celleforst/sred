@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import os
 import argparse
-import PySimpleGUI as sg
+# import PySimpleGUI as sg  # Disabled to prevent GUI issues
 import pathlib
 import time
 import tkinter as tk
